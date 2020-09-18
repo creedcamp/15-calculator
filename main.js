@@ -1,36 +1,42 @@
-//const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-//the above would be used toward making the hard mode
-//this first function makes add and has it grab the two values entered and put them toward the "answer" inside of the html.
+// and put them toward the "answer" inside of the html.
 //the functions following it do the same, but for subtraction, multiplication, and division.
-function add(e) {
+let add = document.querySelector("#add")
+add.addEventListener("click", function (e) {
   e.preventDefault()
-  const nums1 = document.querySelector("#nums1").value
-  const nums2 = document.querySelector("#nums2").value
+  const num1 = document.querySelector("#num1").value
+  const num2 = document.querySelector("#num2").value
   let answer = document.querySelector("#answer")
   return (answer.innerHTML = Number(num1) + Number(num2))
-}
-document.querySelector("#add").addEventListener("click", add)
-function subtract(e) {
+})
+
+const subtract = document.querySelector("#sub")
+subtract.addEventListener("click", function (e) {
   e.preventDefault()
   const num1 = document.querySelector("#num1").value
   const num2 = document.querySelector("#num2").value
   let answer = document.querySelector("#answer")
   return (answer.innerHTML = Number(num1) - Number(num2))
-}
-document.querySelector("#sub").addEventListener("click", subtract)
-function multiply(e) {
+})
+
+const multiply = document.querySelector("#multi")
+multiply.addEventListener("click", function (e) {
   e.preventDefault()
   const num1 = document.querySelector("#num1").value
   const num2 = document.querySelector("#num2").value
   let answer = document.querySelector("#answer")
   return (answer.innerHTML = Number(num1) * Number(num2))
-}
-document.querySelector("#mult").addEventListener("click", multiply)
-function divide(e) {
+})
+
+const divide = document.querySelector("#divi")
+divide.addEventListener("click", function (e) {
   e.preventDefault()
   const num1 = document.querySelector("#num1").value
   const num2 = document.querySelector("#num2").value
   let answer = document.querySelector("#answer")
   return (answer.innerHTML = Number(num1) / Number(num2))
-}
-document.querySelector("#divi").addEventListener("click", divide)
+})
+
+// .addEventListener("click", add(e))
+// document.querySelector("#sub").addEventListener("click", subtract(e))
+// document.querySelector("#multi").addEventListener("click", multiply(e))
+// document.querySelector("#divi").addEventListener("click", divide(e))

@@ -6,6 +6,7 @@ add.addEventListener("click", function (e) {
   const num1 = document.querySelector("#num1").value
   const num2 = document.querySelector("#num2").value
   let answer = document.querySelector("#answer")
+  console.log(answer)
   return (answer.innerHTML = Number(num1) + Number(num2))
 })
 
@@ -35,7 +36,7 @@ divide.addEventListener("click", function (e) {
   let answer = document.querySelector("#answer")
   return (answer.innerHTML = Number(num1) / Number(num2))
 })
-
+////////////
 // .addEventListener("click", add(e))
 // document.querySelector("#sub").addEventListener("click", subtract(e))
 // document.querySelector("#multi").addEventListener("click", multiply(e))
